@@ -4,11 +4,10 @@ import { BrowserRouter } from 'react-router-dom';
 import GlobalStyles from '../../assets/styles/global';
 import defaultTheme from '../../assets/styles/themes/default';
 
+import Header from '../Header';
 import Routes from '../../Routes';
 
-import logo from '../../assets/images/logo.svg';
-
-import { Container, Header } from './styles';
+import { Container } from './styles';
 
 export default function App() {
   return (
@@ -16,9 +15,7 @@ export default function App() {
       <ThemeProvider theme={defaultTheme}>
         <GlobalStyles />
         <Container>
-          <Header>
-            <img src={logo} alt="MyContacts" width="201" />
-          </Header>
+          <Header />
           <Routes />
         </Container>
       </ThemeProvider>
