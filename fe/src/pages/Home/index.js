@@ -32,7 +32,7 @@ export default function Home() {
 
         setContacts(contactsList);
       } catch (error) {
-        console.log('erro', error);
+        console.log('Caiu no catch', error);
       } finally {
         setIsLoading(false);
       }
